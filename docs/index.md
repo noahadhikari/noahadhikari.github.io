@@ -2,4 +2,4 @@
 layout: default
 title: Home
 ---
-Hello World!
+Hello there! Welcome to my website. This is the home page.
