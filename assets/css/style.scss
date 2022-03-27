@@ -2,3 +2,12 @@
 ---
 
 @import "jekyll-theme-modernist";
+
+
+.nav > li > a{
+    font-size: large;
+    font-weight: bold;
+}
+.nav > li > a:hover{
+    background-color:#FCC;
+}
