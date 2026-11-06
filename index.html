@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Noah Adhikari. Programming, applied mathematics, music, and learning along the way.">
+  <meta name="theme-color" content="#eae9e0">
+  <title>Noah Adhikari</title>
+  <link rel="icon" href="assets/images/monogram.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Noah Adhikari, home">na<span aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="pokemon-draft/">Draft Lab</a>
+      <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark colors" aria-pressed="false" hidden><span class="theme-icon" aria-hidden="true"></span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow hero-enter"><span class="player-dot" aria-hidden="true"></span> PLAYER 01 <span class="short-rule" aria-hidden="true"></span> NOAH ADHIKARI</p>
+        <h1 id="hero-title" class="sr-only">Noah Adhikari</h1>
+        <div class="hero-intro hero-enter"><p>Education enthusiast.<br>Automation addict.<br><span class="muted">Mediocre musician.</span></p><a class="arrow-link" href="#about"><span class="pixel-pointer" aria-hidden="true">▶</span> About me</a></div>
+      </div>
+      <figure class="signal-figure hero-enter">
+        <div class="world-frame">
+          <div class="world-toolbar"><span class="pixel-window-icon" aria-hidden="true"></span><span>NOAH / OVERWORLD</span><span class="window-blocks" aria-hidden="true">▪ ▪ ▪</span></div>
+          <div class="signal-stage">
+            <img class="signal-fallback" src="assets/images/overworld.svg" width="192" height="176" alt="" aria-hidden="true">
+            <canvas id="signal-canvas" aria-hidden="true"></canvas>
+            <div class="signal-top"><span>WORLD 01</span><span class="signal-indicator"><i></i><span id="signal-status">LIVE</span></span></div>
+            <div class="signal-bottom"><span class="world-coordinate">MAP 01 · THE QUIET PART</span><button class="motion-toggle" type="button" aria-pressed="false" hidden><span class="motion-symbol" aria-hidden="true">Ⅱ</span><span class="motion-label">Pause motion</span></button></div>
+          </div>
+          <div class="world-status"><span><i aria-hidden="true"></i> TAKING THE SCENIC ROUTE</span><span>NIGHT</span></div>
+        </div>
+        <figcaption><span>A small world. A few moving parts.</span><span class="signal-hint" hidden>Move the pointer to look around <span aria-hidden="true">↗</span></span></figcaption>
+      </figure>
+      <div class="hero-footer"><span>PROGRAMMING / MATHEMATICS / MUSIC</span><a href="#projects">CONTINUE <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="section-marker" data-reveal><span><i class="pixel-cross" aria-hidden="true"></i> 01 / CHARACTER INFO</span><span aria-hidden="true">↘</span></div>
+      <div class="about-body">
+        <h2 id="about-title" data-reveal>I like understanding how things work.<br><span class="muted">Then seeing what I can do with them.</span></h2>
+        <div class="about-columns" data-reveal><p>My background is in computer science and applied mathematics at UC Berkeley. I’m interested in the places where the two meet: automation, robotics, and making sense of data.</p><p>I also like teaching and working things out with other people. Outside of that, I play piano and guitar, sing, and occasionally lose track of time over a chessboard.</p></div>
+        <ul class="tools" aria-label="Tools and interests" data-reveal><li>Python</li><li>Java</li><li>Applied mathematics</li><li>Robotics</li><li>Music</li></ul>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="section-marker" data-reveal><span><i class="pixel-cross" aria-hidden="true"></i> 02 / PROJECT INVENTORY</span><span class="archive-label">FROM THE ARCHIVE</span></div>
+      <div class="projects-heading" data-reveal><h2 id="projects-title">A few things<br>I’ve spent time on.</h2><p>Some projects, some ideas.<br>Mostly an excuse to learn something.</p></div>
+      <div class="project-list">
+        <details class="project" data-reveal>
+          <summary><span class="project-index"><svg class="pixel-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4h7v3h3v5H2V7h2z" fill="currentColor"/><path d="M5 5h5v3H5z" fill="var(--paper)"/><path d="M3 11h3v3H3zm7 0h3v3h-3z" fill="var(--accent)"/></svg><span>01</span></span><span class="project-title">Voice-controlled car</span><span class="project-category">ROBOTICS / CONTROL SYSTEMS</span><span class="project-toggle" aria-hidden="true">↗</span></summary>
+          <div class="project-content"><p>Taking spoken instructions and turning them into movement. A project from my time at Berkeley exploring programming and control systems in the physical world.</p><div class="project-aside"><span>THE QUESTION</span><p>How do you turn “go left” into a useful instruction for a machine?</p></div></div>
+        </details>
+        <details class="project" data-reveal>
+          <summary><span class="project-index"><svg class="pixel-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2h8v9h-2V5H8v8H6V2zM3 11h3v3H2v-2h1zm6-2h3v3H8v-2h1z" fill="currentColor"/><path d="M8 2h6v2H8z" fill="var(--accent)"/></svg><span>02</span></span><span class="project-title">Melody harmonizer</span><span class="project-category">MUSIC / MACHINE LEARNING</span><span class="project-toggle" aria-hidden="true">↗</span></summary>
+          <div class="project-content"><p>An idea from my original site: take an input melody and use machine learning to suggest an accompaniment. An exploration of something I enjoy from both sides—writing code and making music.</p><div class="project-aside"><span>THE QUESTION</span><p>What makes two notes belong together?</p><span class="project-status">Concept / not a released tool</span></div></div>
+        </details>
+        <details class="project" data-reveal>
+          <summary><span class="project-index"><svg class="pixel-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3h4v2H3zm6 0h4v2H9zM2 5h5v7H2zm7 0h5v7H9zM3 12h4v2H3zm6 0h4v2H9z" fill="currentColor"/><path d="M7 5h2v9H7z" fill="var(--accent)"/></svg><span>03</span></span><span class="project-title">Pioneers in Engineering</span><span class="project-category">EDUCATION / COMMUNITY</span><span class="project-toggle" aria-hidden="true">↗</span></summary>
+          <div class="project-content"><p>At Berkeley, I was part of Pioneers in Engineering, a student organization making robotics competitions more accessible to high school students. A way to share what I was learning and learn from others in the process.</p><div class="project-aside"><span>THE ORGANIZATION</span><a class="arrow-link" href="https://pioneers.berkeley.edu/" target="_blank" rel="noopener noreferrer">Pioneers in Engineering <span aria-hidden="true">↗</span></a></div></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="music-section section" aria-labelledby="music-title">
+      <div class="section-marker" data-reveal><span><i class="pixel-cross" aria-hidden="true"></i> 03 / SOUND TEST</span><span aria-hidden="true">♮</span></div>
+      <div class="music-body" data-reveal><div><h2 id="music-title">Usually near<br>a piano.</h2><p>Or a guitar. During my Berkeley years, I performed for senior homes with CalCommunityMusic.</p><p class="muted">You can play this one.</p></div><div class="piano-wrap"><div class="sound-toolbar"><button class="sound-toggle" type="button" aria-pressed="true" hidden><span class="sound-toggle-dot" aria-hidden="true"></span><span class="sound-label">8-BIT SOUND</span></button><span class="note-readout">NOTE <output id="note-display" aria-label="Last note played">--</output></span></div><div class="piano" role="group" aria-label="Playable piano"><button type="button" data-note="261.63" data-key="a" aria-label="Play C">C<span>A</span></button><button type="button" class="black-key" data-note="277.18" data-key="w" aria-label="Play C sharp">C♯</button><button type="button" data-note="293.66" data-key="s" aria-label="Play D">D<span>S</span></button><button type="button" class="black-key" data-note="311.13" data-key="e" aria-label="Play D sharp">D♯</button><button type="button" data-note="329.63" data-key="d" aria-label="Play E">E<span>D</span></button><button type="button" data-note="349.23" data-key="f" aria-label="Play F">F<span>F</span></button><button type="button" class="black-key" data-note="369.99" data-key="t" aria-label="Play F sharp">F♯</button><button type="button" data-note="392" data-key="g" aria-label="Play G">G<span>G</span></button><button type="button" class="black-key" data-note="415.30" data-key="y" aria-label="Play G sharp">G♯</button><button type="button" data-note="440" data-key="h" aria-label="Play A">A<span>H</span></button><button type="button" class="black-key" data-note="466.16" data-key="u" aria-label="Play A sharp">A♯</button><button type="button" data-note="493.88" data-key="j" aria-label="Play B">B<span>J</span></button><button type="button" data-note="523.25" data-key="k" aria-label="Play high C">C<span>K</span></button></div><p class="piano-hint" id="piano-hint">A S D F G H J K / play a note</p><noscript><p class="piano-hint">Enable JavaScript to play the piano.</p></noscript></div></div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="section-marker" data-reveal><span><i class="pixel-cross" aria-hidden="true"></i> 04 / GET IN TOUCH</span><span>OPEN TO A CONVERSATION</span></div>
+      <div class="contact-body" data-reveal><h2 id="contact-title">Have something<br>in mind<span class="name-period">?</span></h2><div class="contact-links"><a class="email-link" href="mailto:noahadhikari3@gmail.com">Send me a note <span class="pixel-mail" aria-hidden="true">↗</span></a><a class="email-address" href="mailto:noahadhikari3@gmail.com">noahadhikari3@gmail.com</a><a class="github-link" href="https://github.com/noahadhikari" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark" href="#home" aria-label="Back to top">na<span aria-hidden="true">.</span></a><span>BUILT BY NOAH, STILL FIGURING THINGS OUT.</span><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
