@@ -1,6 +1,6 @@
 # Noah Adhikari
 
-The competitive Pokémon planner is developed separately in the sibling `pokemon-draft-lab` project. Its intended GitHub Pages path is `/pokemon-draft/`. Planner source and tests are kept in that separate project.
+The competitive Pokémon planner is developed separately in the sibling `pokemon-draft-lab` project. Its intended GitHub Pages path is `/pokemon-draft-lab/`. Planner source and tests are kept in that separate project.
 
 A personal website built with plain HTML, CSS, and JavaScript. No Ruby, Jekyll, package installation, or build step.
 
